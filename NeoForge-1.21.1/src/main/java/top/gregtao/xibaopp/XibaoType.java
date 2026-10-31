@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 
 public enum XibaoType {
     XIBAO(
-            XibaoPlusPlusMusic.XIBAO_MUSIC,
+            XibaoPlusPlusMusic::getXibaoMusic,
             ResourceLocation.fromNamespaceAndPath(XibaoPlusPlusMain.MOD_ID, "textures/xibao.png"),
             new ResourceLocation[] {
                     ResourceLocation.fromNamespaceAndPath(XibaoPlusPlusMain.MOD_ID, "textures/yellow_snow.png"),
@@ -16,7 +16,7 @@ public enum XibaoType {
             "xibao"
     ),
     BEIBAO(
-            XibaoPlusPlusMusic.BEIBAO_MUSIC,
+            XibaoPlusPlusMusic::getBeibaoMusic,
             ResourceLocation.fromNamespaceAndPath(XibaoPlusPlusMain.MOD_ID, "textures/beibao.png"),
             new ResourceLocation[] {
                     ResourceLocation.fromNamespaceAndPath(XibaoPlusPlusMain.MOD_ID, "textures/white_snow.png")
