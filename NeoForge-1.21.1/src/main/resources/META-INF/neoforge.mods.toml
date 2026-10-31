@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "xibaopp"
+version = "${version}"
+displayName = "Xibao++ (NeoForge 1.21.1)"
+authors = "GregTao, TeaCon(灵感), NeoForge port"
+description = '''
+Congratulations! You had lost the connection!
+
+A client-side mod that replaces the disconnected screen with a Xibao picture,
+music and falling-flower animation. Ported to Minecraft 1.21.1 NeoForge.
+'''
+logoFile = "logo.png"
+displayTest = "IGNORE_ALL_VERSION"
+
+[[dependencies.xibaopp]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.xibaopp]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[mixins]]
+config = "xibaopp.mixins.json"

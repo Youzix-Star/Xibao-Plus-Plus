@@ -1,3 +1,10 @@
+# Xibao++
+
+> **NeoForge 1.21.1 port:** see [`NeoForge-1.21.1/`](NeoForge-1.21.1/README.md).
+> It is built automatically by GitHub Actions
+> (`.github/workflows/neoforge-build.yml`) and can be installed on
+> Minecraft 1.21.1 with NeoForge 21.1.x.
+
 ## 自定义音乐/图片使用资源包
 路径：
 - assets/xibaopp/sounds
