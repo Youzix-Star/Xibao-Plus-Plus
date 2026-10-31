@@ -16,7 +16,7 @@ public class MinecraftMixin {
     private void xibao$getSituationalMusic(CallbackInfoReturnable<Music> cir) {
         if (XibaoPlusPlusConfig.playMusic && XibaoPlusPlusConfig.shouldPlayMusic) {
             if (Minecraft.getInstance().screen instanceof DisconnectedScreen) {
-                cir.setReturnValue(XibaoPlusPlusConfig.type.music);
+                cir.setReturnValue(XibaoPlusPlusConfig.type.music.get());
             }
         }
     }

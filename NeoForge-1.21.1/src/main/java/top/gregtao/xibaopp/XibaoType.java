@@ -3,6 +3,8 @@ package top.gregtao.xibaopp;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.Music;
 
+import java.util.function.Supplier;
+
 public enum XibaoType {
     XIBAO(
             XibaoPlusPlusMusic.XIBAO_MUSIC,
@@ -22,12 +24,12 @@ public enum XibaoType {
             "beibao"
     );
 
-    public final Music music;
+    public final Supplier<Music> music;
     public final ResourceLocation background;
     public final ResourceLocation[] snows;
     public final String type;
 
-    XibaoType(Music music, ResourceLocation background, ResourceLocation[] snows, String type) {
+    XibaoType(Supplier<Music> music, ResourceLocation background, ResourceLocation[] snows, String type) {
         this.music = music;
         this.background = background;
         this.snows = snows;
