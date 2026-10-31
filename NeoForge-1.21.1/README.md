@@ -20,17 +20,21 @@ Everything is client-side, so the mod can be used on any server.
 - NeoForge **21.1.x** (built against 21.1.265)
 - Java **21**
 
+## Download
+
+Grab the latest jar from
+[GitHub Releases](https://github.com/Youzix-Star/Xibao-Plus-Plus/releases)
+and drop it into your `mods/` folder.
+
 ## Build
 
-```bash
-cd NeoForge-1.21.1
-./gradlew build
-```
+This mod is always built by GitHub Actions — no local build is required or
+supported by the project workflow.
 
-The jar is written to `NeoForge-1.21.1/build/libs/`.
-
-GitHub Actions builds every push automatically; the jar is attached to the
-workflow run as the `XibaoPlusPlus-NeoForge-1.21.1` artifact.
+- Every push runs `.github/workflows/neoforge-build.yml` and keeps the jar as
+  the `XibaoPlusPlus-NeoForge-1.21.1` workflow artifact.
+- Pushing a `v*` tag builds the mod and publishes the jar (plus a
+  `SHA256SUMS.txt`) to [GitHub Releases](https://github.com/Youzix-Star/Xibao-Plus-Plus/releases).
 
 ## Configuration
 
