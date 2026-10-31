@@ -1,5 +1,7 @@
 # Xibao++ — NeoForge 1.21.1
 
+[![Build NeoForge 1.21.1](https://github.com/Youzix-Star/Xibao-Plus-Plus/actions/workflows/neoforge-build.yml/badge.svg?branch=neoforge-1.21.1)](https://github.com/Youzix-Star/Xibao-Plus-Plus/actions/workflows/neoforge-build.yml)
+
 This directory contains the **Minecraft 1.21.1 / NeoForge** port of
 [Xibao++](https://github.com/GregTaoo/Xibao-Plus-Plus).
 

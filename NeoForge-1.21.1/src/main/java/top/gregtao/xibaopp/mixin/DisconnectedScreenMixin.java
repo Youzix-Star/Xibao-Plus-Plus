@@ -37,6 +37,7 @@ public class DisconnectedScreenMixin extends Screen {
         if (XibaoPlusPlusConfig.displaySnow) {
             SnowAnimation.INSTANCE = new SnowAnimation(XibaoPlusPlusConfig.random);
         }
-        this.addRenderableWidget(new BackgroundWidget());
+        // Insert first so the picture is drawn behind the three buttons instead of over them.
+        this.renderables.add(0, new BackgroundWidget());
     }
 }
